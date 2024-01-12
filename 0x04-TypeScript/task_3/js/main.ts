@@ -3,12 +3,12 @@ import { RowID, RowElement } from './interface';
 import CRUD from './crud';
 
 const row: RowElement = {
-  firstName: 'Zino',
-  lastName: 'Zaram',
+  firstName: 'Guillaume',
+  lastName: 'Salva',
 }
 
 const newRowID: RowID = CRUD.insertRow(row);
-row.age = 26;
+row.age = 23;
 const updatedRow: RowElement = row;
 
 CRUD.updateRow(newRowID, updatedRow);
